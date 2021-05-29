@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ejercicio16 {
+
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner(System.in);
+		
+		System.out.println("Dime el limite inferior: ");
+		int inferior=teclado.nextInt();
+		
+		System.out.println("Dime el limite superior: ");
+		int superior=teclado.nextInt();
+		
+		int suma=inferior+((inferior+1/2));
+		inferior++;
+		
+		int i;		
+		for (i=inferior; i<superior; i++) {
+			suma=suma+i+((i-1)*2)+((i+1)/2);
+		}
+		suma=suma+i+((i-1)*2);
+		
+		System.out.println(suma);
+		
+	}
+
+}
